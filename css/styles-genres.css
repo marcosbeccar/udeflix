@@ -40,14 +40,31 @@ a {
 
 /* LISTA DE GENEROS */
 
-body {
-    background-color: rgba(31, 26, 26, 0.913);
-}
 
-
-/* BARRA DE NAVEGACIÓN */
-
-.container-generos img{
+.container-peliculas img{
     width: 150px;
     height: 150px;
+}
+.container-series img{
+    width: 150px;
+    height: 150px;
+}
+
+.container-peliculas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-series{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* DETALLES */
+
+p{
+    color: white;
+}
+h2{
+    color: white;
 }
