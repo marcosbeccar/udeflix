@@ -53,11 +53,13 @@ a {
 .container-peliculas{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .container-series{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* DETALLES */
