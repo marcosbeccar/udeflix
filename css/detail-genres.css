@@ -40,3 +40,17 @@ a {
     margin: 0px 30px;
     padding: 0px;
 }
+
+/*DETALLE DE LOS GENEROS*/
+
+.generos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.generos img{
+    width: 300px;
+    
+}
