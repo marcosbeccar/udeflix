@@ -63,7 +63,7 @@ nav{
 .main-container{
     width: 100%;
     display: flex;
-    flex-direction: column; /*cada sección ordenada verticalmente*/
+    flex-direction: column; /*cada sección ordenada horizontalemnte*/
     padding: 0px 15px; /*mini borde a los costados*/
 }
 .barra-peliculas{
