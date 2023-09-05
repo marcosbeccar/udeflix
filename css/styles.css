@@ -84,11 +84,6 @@ article{
     margin: 0 5px; /*margen mínimo entre imágenes - responsive*/
 }
 
-button {
-    background-image: url("/udeflix/img/estrella.png");
-    width: 150px;
-    height: 50px;
-    background-size: cover;
-}
+
 
 
