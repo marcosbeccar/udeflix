@@ -31,7 +31,7 @@ a {
 }
 nav{
     display: flex;
-    width: 100%;   /*toma el tamaño del header*/
+    width: 100vw;   /*toma el tamaño del header*/
 }
 .navegacion{
     width: 100%;  /*Toma el tamaño del nav*/
@@ -69,7 +69,7 @@ nav{
 .barra-peliculas{
     width: 100%;
     height: 250px;
-    margin: 25px 0px; /*separado arriba y abajo*/
+    margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
     display: flex;
     flex-direction:column; /*cada sección ordenada verticalmente*/
     
@@ -82,8 +82,28 @@ article{
     display: flex;
     flex-wrap: wrap;
     margin: 0 5px; /*margen mínimo entre imágenes - responsive*/
+    max-width: 500px; /*por las dudas*/
 }
 
 
 
 
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.footer-hijo{
+    display: flex;
+    background-color: rgba(218, 9, 9, 0.762);
+    width: 80vw;
+    height: 65px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px 20px;
+    justify-content: center;
+}
