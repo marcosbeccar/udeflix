@@ -106,7 +106,7 @@ article{
 footer{
     display: flex;
     width: 100vw;
-    
+    justify-content: center;
     margin-top: 15px;
 }
 .footer-hijo{
@@ -118,7 +118,7 @@ footer{
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
-    background-color: rgb(3, 14, 42);
+    background-color: rgb(7, 45, 142);
 }
 
 .footer-hijo nav ul li{
