@@ -1,3 +1,4 @@
+/*AJUSTES GENERALES*/
 *{  box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -6,18 +7,6 @@ body {
     background-color: #022331;
     margin: 0px;
 }
-
-
-/* BARRA DE NAVEGACIÓN */ /*para copiar y pegar*/
-
-header{
-    display: flex;
-    background-color: rgb(3, 14, 42);
-    width: 100vw;
-    height: 70px;
-    align-items: center;  /*centra en eje Y */
-}
-
 ul {
     list-style: none;
     display: flex;
@@ -28,6 +17,16 @@ a {
     text-decoration: none;
     color:white;
     white-space: nowrap; /*evita ajuste de palabras*/
+}
+
+/* BARRA DE NAVEGACIÓN */ /*para copiar y pegar*/
+
+header{
+    display: flex;
+    background-color: rgb(3, 14, 42);
+    width: 100vw;
+    height: 70px;
+    align-items: center;  /*centra en eje Y */
 }
 nav{
     display: flex;
@@ -60,8 +59,8 @@ nav{
     color:gray;
 }
 
-
-
+/*---------------------------------------------*/
+/*index.html*/
 
 
 /*main*/
@@ -107,6 +106,58 @@ article{
     width: 70%;
     object-fit: cover;
 }
+
+/*------------------------------------------------*/
+/*detail-genres.html*/
+
+
+
+
+
+/*------------------------------------------------*/
+/*detail-movie.html*/
+
+
+
+
+
+/*------------------------------------------------*/
+/*detail-serie.html*/
+
+
+
+
+
+
+/*------------------------------------------------*/
+/*favorite.html*/
+
+
+
+
+
+
+
+/*-----------------------------------------------*/
+/*genres.html*/
+
+
+
+
+
+
+
+
+/*------------------------------------------------*/
+/*search-results.html*/
+
+
+
+
+
+
+
+
 
 
 
