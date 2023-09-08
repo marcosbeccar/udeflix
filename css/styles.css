@@ -62,6 +62,8 @@ nav{
 
 
 
+
+
 /*main*/
 .main-container{
     width: 100%;
@@ -87,12 +89,14 @@ article{
     margin: 0 5px; /*margen mínimo entre imágenes - responsive*/
     max-width: 500px; /*por las dudas*/
 }
+
+/*BANNER*/
 .banner-destacado{
     display: flex;
-    width: ;
+    width:100vw;
+    height: 80vh;
+    overflow-x: scroll;
 }
-
-
 
 
 
