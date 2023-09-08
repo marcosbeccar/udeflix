@@ -100,10 +100,16 @@ footer{
 .footer-hijo{
     display: flex;
     background-color: rgba(218, 9, 9, 0.762);
-    width: 80vw;
+    width: 90vw;
     height: 65px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 10px 20px;
     justify-content: center;
 }
+
+
+.footer-hijo nav ul li{
+    margin: 0px 20px;
+}
+
