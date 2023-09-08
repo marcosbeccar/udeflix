@@ -81,7 +81,7 @@ nav{
 }
 .peliculas{
     display: flex;
-    flex-direction: row; 
+    
 }
 article{
     display: flex;
