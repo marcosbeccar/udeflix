@@ -117,6 +117,53 @@ article{
 /*------------------------------------------------*/
 /*detail-movie.html*/
 
+.container_detalle_pelicula{
+    flex-direction: row;
+    display: flex;
+    padding: 10px;
+}
+
+.detalle_pelicula_izquierda{
+    display:flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 10px;
+}
+
+.detalle_pelicula_izquierda img{
+    width:100%;
+}
+
+.detalle_pelicula_derecha{
+    display:flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 10px;
+}
+
+
+.detalle_pelicula_derecha ul{
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.detalle_pelicula_derecha li{
+    padding: 10px;
+}
+
+.boton_favorito{
+    display:flex;
+    width:200px;
+    background-color:white;
+    border: solid 2px #053448;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton_favorito p{
+    color:#053448;
+}
 
 
 
