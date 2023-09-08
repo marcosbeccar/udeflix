@@ -11,7 +11,7 @@
 <body>
     <header>
         
-        <img src="img/logo.jpg" alt="logo" class="logo">
+        <img src="img/logo-argentina.png" alt="logo" class="logo">
         
         <nav>
             <ul class="navegacion">
@@ -22,6 +22,12 @@
             </ul>
         </nav>
         <div class="busqueda-y-usuario">
+            
+            <form action="search-results.html" method="get">
+                <div>
+                    <input id="busqueda" type="text" name="busqueda" value="" placeholder="Busqueda" class="form">
+                </div>
+            </form>
             <img src="img/search-logo.png" height="35px">
             <img src="img/icono-user.png" width="50px">
         </div>
@@ -30,6 +36,11 @@
     </header>
 
     <main class="main-container">
+        <section class="banner-destacado">
+            <img src="img/argentina-1985-1.jpeg" class="slider-item">
+            <img src="img/relatos-salvajes.jpg" class="slider-item">
+            <img src="img/me-case-con-un-boludo.jpg" class="slider-item">
+        </section>
         <section class="barra-peliculas">
             <h3>Populares ></h3>
             <div class="peliculas">
@@ -142,9 +153,8 @@
     <footer>
         <section class="footer-hijo">
 
-        <h4>Desarrolladores:</h4>
-
         <nav>
+            <h4>Desarrolladores:</h4>
             <ul>
                 <li>Marcos Beccar</li>
                 <li>Abril Reggiardo</li>
