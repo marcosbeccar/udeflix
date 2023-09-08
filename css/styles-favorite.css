@@ -3,7 +3,7 @@
     color: white;
 }
 body {
-    background-color: #141414;
+    background-color: #022331;
     margin: 0px;
 }
 
@@ -80,16 +80,14 @@ footer{
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
-    background-color: rgb(102, 183, 210);
+    background-color: rgb(3, 14, 42);
 }
 
 .footer-hijo nav ul li{
     margin: 0px 20px 0px 0px;
-    color: black;
 }
 
 .footer-hijo h4{
-    color: black;
     display: flex;
     justify-content: center;
 }
