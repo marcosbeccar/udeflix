@@ -19,7 +19,7 @@ a {
     white-space: nowrap; /*evita ajuste de palabras*/
 }
 
-/* BARRA DE NAVEGACIÓN */ /*para copiar y pegar*/
+/* BARRA DE NAVEGACIÓN */ /*La misma en todas las páginas*/
 
 header{
     display: flex;
@@ -108,6 +108,28 @@ article{
 /*------------------------------------------------*/
 /*detail-genres.html*/
 
+/*DETALLE DE LOS GENEROS*/
+
+.generos{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;/*mini borde a los costados*/
+    flex-direction: column;
+}
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5px; /*margen mínimo*/
+}
+h1{
+    margin:15px;
+}
 
 
 
@@ -187,7 +209,38 @@ article{
 /*-----------------------------------------------*/
 /*genres.html*/
 
+/* LISTA DE GENEROS */
 
+
+.container-peliculas img{
+    width: 150px;
+    height: 150px;
+}
+.container-series img{
+    width: 150px;
+    height: 150px;
+}
+
+.container-peliculas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-series{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* DETALLES */
+
+p{
+    color: white;
+}
+h2{
+    color: white;
+}
 
 
 
@@ -207,7 +260,7 @@ article{
 
 
 
-/*Footer*/
+/*Footer*/ /*El mismo en todas las páginas*/
 
 footer{
     display: flex;
