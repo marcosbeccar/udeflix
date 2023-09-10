@@ -6,6 +6,9 @@
 body {
     background-color: #022331;
     margin: 0px;
+    min-height: 100vh; /*para que el contenido ocupe siempre el 100vh, y el footer se mantenga abajo*/
+    display: flex;
+    flex-direction: column;
 }
 ul {
     list-style: none;
@@ -71,14 +74,13 @@ nav{
     margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
     display: flex;
     flex-direction:column; /*cada sección ordenada verticalmente*/
-
-    
 }
 
 .peliculas{
     display: flex;
     justify-content: space-between;
-    max-width: 1500px;
+    width: 90vw;
+    background-color: #020c106b;
     
 }
 article{
@@ -89,14 +91,19 @@ article{
 }
 .img-peliculas{
     display: flex;
-    width: 220px;
+    width: 220px;   
+}
+.barra-peliculas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*BANNER*/
 .banner-destacado{
     display: flex;
     width:100vw;
-    height: 80vh;
+    height: 70vh;
     overflow-x: scroll;
 }
 .slider-item{
@@ -270,6 +277,7 @@ h1{
     height: auto; /*para que el contenedor padre se adapte al heigth de los items hijos*/
     margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
     flex-direction:column; /*cada sección ordenada verticalmente*/
+    justify-content: center;
 }
 
 .titulo-favorito{
@@ -283,7 +291,8 @@ h1{
 .peliculas-fav{
     display: flex;
     justify-content: space-between;
-    max-width: 1500px;
+    width: 90vw;
+    background-color: #020c106b;
 }
 
 .section-series-fav h3{
@@ -390,6 +399,12 @@ h2{
 
 
 /*Footer*/ /*El mismo en todas las páginas*/
+
+.todo-menos-footer{   /*un div que separa el contenido del footer*/
+    display: flex;
+    flex-direction: column;
+    flex:1;       /*flex:1; hace que ocupe TODO lo que sobre en la pantalla, cubriendo el 100vh*/
+}
 
 footer{
     display: flex;
