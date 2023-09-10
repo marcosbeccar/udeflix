@@ -278,7 +278,6 @@ h1{
 
 .section-peliculas-fav h3{
     padding: 0px 0px 0px 15px;
-    text-decoration:underline;
 }
 
 .peliculas-fav{
@@ -289,7 +288,6 @@ h1{
 
 .section-series-fav h3{
     padding: 0px 0px 0px 15px;
-    text-decoration:underline;
 }
 
 .series-fav{
@@ -306,28 +304,65 @@ h1{
 /* LISTA DE GENEROS */
 
 
-.container-peliculas img{
-    width: 150px;
-    height: 150px;
-}
-.container-series img{
-    width: 150px;
-    height: 150px;
+.container-genres{
+    flex-direction: row;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    justify-content: space-evenly;
+
 }
 
 .container-peliculas{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
 }
 
 .container-series{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.container-peliculas ul{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-series ul{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-peliculas li{
+    margin: 15px;
+}
+
+.container-series li{
+    margin: 15px;
+}
+
+/* DETALLES */
+
+.contenido{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-/* DETALLES */
+.contenido img{
+    width: 250px;
+    margin: 10px 0;
+}
+
 
 p{
     color: white;
