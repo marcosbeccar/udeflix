@@ -126,28 +126,37 @@ article{
 /*------------------------------------------------*/
 /*detail-genres.html*/
 
-/*DETALLE DE LOS GENEROS*/
-
+.container-detail-genres{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .generos{
     display: flex;
-    justify-content: space-between;
-    padding: 0px 15px;/*mini borde a los costados*/
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 15px;/*mini borde a la izq*/
     flex-direction: column;
+    width: 100vw;
 }
 
 .contenido{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
 }
 
 article{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 5px; /*margen mínimo*/
+    margin: 0 8px; /*margen mínimo*/
+    max-width: 300px; /*por las dudas*/
 }
 h1{
     margin:15px;
 }
+
 
 
 
