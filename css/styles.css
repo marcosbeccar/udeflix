@@ -11,14 +11,14 @@ body {
     flex-direction: column;
 }
 #video-background {
-    position: fixed;
-    top: 0;
+    position: fixed; /*no lo afecta el desplazamiento*/
+    top: 0; 
     left: 0;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1; /* Coloca el video detrás del contenido */
+    z-index: -1; /* manda el video al fondo */
 }
 ul {
     list-style: none;
@@ -451,3 +451,13 @@ footer{
     align-items: center;
 }
 
+
+
+
+
+
+/*--------MEDIA QUERY's-------*/
+@media (max-width: 760px) {
+    #video-background { display: none; } /*saca el video de fondo*/
+    
+}
