@@ -455,8 +455,8 @@ footer{
 /*--------MEDIA QUERY's-------*/
 @media (max-width: 420px) {
     #video-background { display: none; } /*saca el video de fondo - # en vez de . porque no es un class, es un id*/
-    
 }
+
 @media (max-width:1200px){
     .banner-destacado {display: none;}
     header{display: none;}
@@ -473,8 +473,6 @@ footer{
         width: 100vw;
         height: 50px;
         justify-content: space-between;
-        
-    
     }
     .sanguchito{
         display: flex;
@@ -490,6 +488,7 @@ footer{
     }
 
 }
+
 @media (max-width:700px){
     .peliculas {
         flex-wrap:wrap;
@@ -499,4 +498,11 @@ footer{
     .img-peliculas{
         margin:5px 0;
     }
+
+    .titulo-favorito{
+        font-size: 20px;
+    }
 }
+
+/*página favoritos*/
+
