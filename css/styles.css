@@ -6,6 +6,7 @@
 body {
     background-color: #022331;
     margin: 0px;
+    width: 100%;
     min-height: 100vh; /*para que el contenido ocupe siempre el 100vh, y el footer se mantenga abajo*/
     display: flex;
     flex-direction: column;
@@ -13,11 +14,10 @@ body {
 #video-background {
     position: fixed; /*no lo afecta el desplazamiento*/
     top: 0; 
-    left: 0;
+    left: 0; 
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
+    
     z-index: -1; /* manda el video al fondo */
 }
 ul {
@@ -304,26 +304,12 @@ h1{
     text-align: center;
 }
 
-.section-peliculas-fav h3{
+.section-peliculas h3{
     padding: 0px 0px 0px 15px;
 }
 
-.peliculas-fav{
-    display: flex;
-    justify-content: space-between;
-    width: 90vw;
-    background-color: #020c106b;
-}
-
-.section-series-fav h3{
+.section-peliculas h3{
     padding: 0px 0px 0px 15px;
-}
-
-.series-fav{
-    display: flex;
-    justify-content: space-between;
-    width: 90vw;
-    background-color: #020c106b;
 }
 
 
@@ -464,10 +450,53 @@ footer{
 
 
 
-
+.header-chiquito{display: none;}
 
 /*--------MEDIA QUERY's-------*/
-@media (max-width: 760px) {
-    #video-background { display: none; } /*saca el video de fondo*/
+@media (max-width: 420px) {
+    #video-background { display: none; } /*saca el video de fondo - # en vez de . porque no es un class, es un id*/
     
+}
+@media (max-width:1200px){
+    .banner-destacado {display: none;}
+    header{display: none;}
+    h3{font-size: 11px;}
+    h4{font-size:xx-small}
+    li{font-size:xx-small}
+
+    .img-peliculas{width: 120px;}
+    .peliculas{justify-content: center;}
+    
+    /*header*/
+    .header-chiquito{
+        display: flex;
+        width: 100vw;
+        height: 50px;
+        justify-content: space-between;
+        
+    
+    }
+    .sanguchito{
+        display: flex;
+    }
+
+    .logo{height: 100%;
+    }
+    select{
+        background-color: #022331;
+    }
+    option{
+        color:white;
+    }
+
+}
+@media (max-width:700px){
+    .peliculas {
+        flex-wrap:wrap;
+        
+    }
+
+    .img-peliculas{
+        margin:5px 0;
+    }
 }
