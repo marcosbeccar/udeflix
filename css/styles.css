@@ -268,6 +268,10 @@ h1{
     padding: 10px;
 }
 
+.detalle_serie_derecha p{
+    text-align: justify;
+}
+
 .detalle_serie_derecha h1{
     text-align: center;
 }
@@ -455,6 +459,16 @@ footer{
 /*--------MEDIA QUERY's-------*/
 @media (max-width: 420px) {
     #video-background { display: none; } /*saca el video de fondo - # en vez de . porque no es un class, es un id*/
+
+    .container_detalle_serie{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+
+    .detalle_serie_derecha li{
+        font-size: 15px;
+    }
+
 }
 
 @media (max-width:1200px){
