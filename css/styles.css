@@ -529,6 +529,15 @@ footer{
     .titulo-favorito{
         font-size: 20px;
     }
+
+    .container-peliculas h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .container-series h2{
+        font-size: 18px;
+        text-align: center;
+    }
 }
 
 /*página favoritos*/
