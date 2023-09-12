@@ -91,15 +91,12 @@ nav{
     justify-content: space-between;
     width: 90vw;
     background-color: #020c106b;
-    align-items: center;
-    
 }
-article{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 8px; /*margen mínimo entre imágenes - responsive*/
-    max-width: 300px; /*por las dudas*/
+.peliculas article{
+   width: 22%;
 }
+
+
 .img-peliculas{
     display: flex;
     width: 220px;   
@@ -112,6 +109,10 @@ article{
 
 .barra-peliculas h3{
     font-size: 20px;
+}
+
+.peliculas p {
+    text-align: center;
 }
 
 
@@ -152,12 +153,6 @@ article{
     width: 100vw;
 }
 
-article{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 8px; /*margen mínimo*/
-    max-width: 300px; /*por las dudas*/
-}
 .container-detail-genres h1{
     margin:15px;
     text-align: center;
@@ -410,6 +405,10 @@ h2{
 /*------------------------------------------------*/
 /*search-results.html*/
 
+.container_resultado_busqueda{
+    display:flex;
+    flex-direction: column;
+}
 
 
 
@@ -471,6 +470,9 @@ footer{
 @media (max-width: 420px) {
     #video-background { display: none; } /*saca el video de fondo - # en vez de . porque no es un class, es un id*/
 
+    .peliculas{
+        flex-wrap: wrap;
+    }
     .container_detalle_serie{
         flex-direction: column-reverse;
         margin: 0 auto;
@@ -479,7 +481,7 @@ footer{
     .detalle_serie_derecha li{
         font-size: 15px;
     }
-
+  
 }
 
 @media (max-width:1200px){
