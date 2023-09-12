@@ -153,8 +153,13 @@ article{
     margin: 0 8px; /*margen mínimo*/
     max-width: 300px; /*por las dudas*/
 }
-h1{
+.container-detail-genres h1{
     margin:15px;
+    text-align: center;
+}
+
+.container-detail-genres h2{
+    margin: 0px 0px 0px 15px;
 }
 
 
