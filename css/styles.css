@@ -161,6 +161,7 @@ article{
 .container-detail-genres h1{
     margin:15px;
     text-align: center;
+    text-decoration: underline;
 }
 
 .container-detail-genres h2{
