@@ -91,10 +91,16 @@ nav{
     justify-content: space-between;
     width: 90vw;
     background-color: #020c106b;
+    padding: 0 10px;
 }
 .peliculas article{
-   width: 22%;
+    display: flex;
+   
+   justify-content: center;
+   flex-direction: column;
+   
 }
+
 
 
 .img-peliculas{
@@ -492,7 +498,6 @@ footer{
     li{font-size:xx-small}
 
     .img-peliculas{width: 120px;}
-    .peliculas{justify-content: center;}
     
     /*header*/
     .header-chiquito{
