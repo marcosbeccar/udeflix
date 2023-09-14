@@ -481,16 +481,35 @@ footer{
 
     .peliculas{
         flex-wrap: wrap;
+        justify-content:space-evenly;
     }
+    /*detelles series-peliculas*/
     .container_detalle_serie{
         flex-direction: column-reverse;
         margin: 0 auto;
+        width: 85vw;
     }
-
+    .detalle_serie_derecha{
+        width: 100%;
+    }
+    .detalle_serie_izquierda{
+        width: 100%;
+    }
     .detalle_serie_derecha li{
         font-size: 15px;
     }
-  
+    .container_detalle_pelicula{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        width: 85vw;
+    }
+    .detalle_pelicula_derecha{
+        width: 100%;
+    }
+    .detalle_pelicula_izquierda{
+        width: 100%;
+    }
+    /*---------------*/
 }
 
 @media (max-width:1200px){
@@ -521,13 +540,13 @@ footer{
     option{
         color:white;
     }
-
+    /*-------*/
 }
 
 @media (max-width:700px){
     .peliculas {
         flex-wrap:wrap;
-        
+        justify-content: space-evenly;
     }
 
     .img-peliculas{
