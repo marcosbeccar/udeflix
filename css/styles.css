@@ -1,25 +1,30 @@
+
 /*AJUSTES GENERALES*/
 *{  box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
 body {
     background-color: #022331;
     margin: 0px;
     width: 100%;
-    min-height: 100vh; /*para que el contenido ocupe siempre el 100vh, y el footer se mantenga abajo*/
+    min-height: 100vh; /*Esto es para que el contenido ocupe siempre el 100vh, y el footer se mantenga abajo*/
     display: flex;
     flex-direction: column;
 }
+
 #video-background {
-    position: fixed; /*no lo afecta el desplazamiento*/
-    top: 0; 
-    left: 0; 
+    position: fixed; /*no se moverá cuando se haga scroll*/
+    top: 0; /*distancia desde la parte superior */
+    left: 0; /*distancia desde la parte izquierda*/
     min-width: 100%;
     min-height: 100%;
+    /*garantiza que el video de fondo cubra toda la pantalla del usuario */
     
-    z-index: -1; /* manda el video al fondo */
+    z-index: -1; /* hace que le video esté detrás de los elementos*/
 }
+
 ul {
     list-style: none;
     display: flex;
@@ -29,7 +34,7 @@ ul {
 a {
     text-decoration: none;
     color:white;
-    white-space: nowrap; /*evita ajuste de palabras*/
+    white-space: nowrap; /*hace que el texto sigua en una sola línea y no se divida*/
 }
 
 /* BARRA DE NAVEGACIÓN */ /*La misma en todas las páginas*/
@@ -41,36 +46,43 @@ header{
     height: 70px;
     align-items: center;  /*centra en eje Y */
 }
+
 nav{
     display: flex;
     width: 100vw;   /*toma el tamaño del header*/
 }
+
 .navegacion{
-    width: 100%;  /*Toma el tamaño del nav*/
+    width: 100%;  /*El ul toma el tamaño del nav*/
     display: flex;
 }
 
 .navegacion li{
-    margin: 0px 20px;
+    margin: 0px 20px; /* 0px en el eje y, 20px en el eje x */
 }
+
 .logo{
     height:110px;
-    margin: 0 0 0 7px;
+    margin: 0 0 0 7px; 
 }
+
 .busqueda-y-usuario{
     display: flex;
     align-self: flex-end;
     align-items: center;
     width: auto;
-    margin: 0 35px 4px 0;
+    margin: 0 35px 4px 0; /*35 píxeles en la derecha y 4 píxeles abajo */
     padding: 5px;
 }
+
 .busqueda-y-usuario img{
     margin: 0 4px;
 }
+
 .form{
-    color:gray;
+    color:gray; /* color de lo que se escriba dentro del formulario */
 }
+
 
 /*---------------------------------------------*/
 /*index.html*/
@@ -80,11 +92,26 @@ nav{
 .main-container{
     width: 100vw;
     width: 100%;
-    height: auto; /*para que el contenedor padre se adapte al heigth de los items hijos*/
+    height: auto; /*para que el contenedor padre se adapte al height de los items hijos*/
     margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
     display: flex;
     flex-direction:column; /*cada sección ordenada verticalmente*/
 }
+
+/*Banner / Carrousel de imagenes*/
+.banner-destacado{
+    display: flex;
+    width:100vw;
+    height: 70vh;
+    overflow-x: scroll; /*establece el scroll horizontal*/
+}
+.slider-item{
+    width: 70%; /*las imgs ocuparán el 70% de su contenedor padre*/
+    object-fit: cover; /*el contenido se ajusta conpletamente al espacio disponible, manteniendo el aspecto del mismo*/
+}
+
+
+/*Section peliculas*/
 
 .peliculas{
     display: flex;
@@ -93,19 +120,17 @@ nav{
     background-color: #020c106b;
     padding: 0 10px;
 }
+
 .peliculas article{
     display: flex;
-   
-   justify-content: center;
-   flex-direction: column;
-   
+    justify-content: center;
+    flex-direction: column;
 }
 
 .img-peliculas{
     display: flex;
     width: 220px;   
 }
-
 
 .barra-peliculas{
     display: flex;
@@ -122,18 +147,6 @@ nav{
 }
 
 
-/*BANNER*/
-.banner-destacado{
-    display: flex;
-    width:100vw;
-    height: 70vh;
-    overflow-x: scroll;
-}
-.slider-item{
-    display: flex;
-    width: 70%;
-    object-fit: cover;
-}
 
 /*------------------------------------------------*/
 /*detail-genres.html*/
