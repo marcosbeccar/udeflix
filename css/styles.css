@@ -417,7 +417,31 @@ h2{
 }
 .detalle-resultado-busqueda{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+}
+.container-search-result{
+    width: 100vw;
+    width: 100%;
+    height: auto; /*para que el contenedor padre se adapte al heigth de los items hijos*/
+    margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
+    display: flex;
+    flex-direction:column; /*cada sección ordenada verticalmente*/
+}
+    
+.pelis{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 20px 0 20px;
+}
+.pelis article{
+    display: flex;   
+    justify-content: center;
+    flex-direction: column;
+       
+}
+.container-search-result h1{
+    padding: 20px;
 }
 
 
@@ -513,6 +537,9 @@ footer{
         flex-direction: column-reverse;
         margin: 0 auto;
         width: 85vw;
+    }
+    .conteiner-search-result{
+        flex-wrap: wrap;
     }
     /*---------------*/
 }
