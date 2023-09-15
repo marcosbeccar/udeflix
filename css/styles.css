@@ -119,6 +119,7 @@ nav{
     width: 90vw;
     background-color: #020c106b;
     padding: 0 10px;
+    align-items: flex-start;
 }
 
 .peliculas article{
@@ -167,6 +168,9 @@ nav{
     margin: 0px 0px 15px 0px;
 }
 
+.peliculas article{
+    margin: 10px 0px;
+}
 
 .generos{
     display: flex;
@@ -420,7 +424,15 @@ h2{
     display: flex;
     flex-direction: row-reverse; /*para que a la izquierda se vean los textos y a la derecha la imagen*/
 }
-
+.container_resultado_busqueda h1{
+    margin: 20px;
+}
+.detalle_pelicula_derecha h3{
+    text-align: center;
+}
+.container-search-result h2{
+    margin: 20px;
+}
 .container-search-result{
     width: 100vw;
     width: 100%;
@@ -428,23 +440,20 @@ h2{
     margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
     display: flex;
     flex-direction:column; /*cada sección ordenada verticalmente*/
-}
-    
+}  
 .pelis{
     display: flex;
     justify-content: space-between;
     width: 100vw;
     padding: 0 20px 0 20px;
 }
-
 .pelis article{
     display: flex;   
     justify-content: center;
-    flex-direction: column;
-       
+    flex-direction: column;     
 }
-.container-search-result h1{
-    padding: 20px;
+.pelis article p{
+    text-align: center;
 }
 
 
@@ -494,7 +503,7 @@ footer{
 }
 
 .header-chiquito{display: none;} /*no será visible en la página, ya que lo creamos solo para los media query's*/
-
+a{display: flex; justify-content: center;}
 
 /*--------MEDIA QUERY's-------*/
 @media (max-width: 420px) {
@@ -536,9 +545,22 @@ footer{
         margin: 0 auto;
         width: 85vw;
     }
-    .conteiner-search-result{
+    .pelis {
         flex-wrap: wrap;
     }
+    .detalle_pelicula_derecha ul li{
+        font-size: 15px;
+    }
+    .detalle_pelicula_derecha h3{
+        font-size: 20px;
+    }
+    .container-peliculas ul li{
+        font-size: 15px;
+    }
+    .container-series ul li{
+        font-size: 15px;
+    }
+
     /*---------------*/
 }
 
@@ -557,6 +579,7 @@ footer{
         width: 100vw;
         height: 50px;
         justify-content: space-between;
+        padding: 0 15px 0 0;
     }
     .sanguchito{
         display: flex;
