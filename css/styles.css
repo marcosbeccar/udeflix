@@ -101,12 +101,12 @@ nav{
    
 }
 
-
-
 .img-peliculas{
     display: flex;
     width: 220px;   
 }
+
+
 .barra-peliculas{
     display: flex;
     flex-direction: column;
