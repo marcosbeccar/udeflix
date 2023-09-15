@@ -156,21 +156,6 @@ nav{
     justify-content: center;
     flex-direction: column;
 }
-.generos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 0 15px;/*mini borde a la izq*/
-    flex-direction: column;
-    width: 100vw;
-}
-
-.contenido{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-}
 
 .container-detail-genres h1{
     margin:15px;
@@ -179,10 +164,25 @@ nav{
 }
 
 .container-detail-genres h2{
-    margin: 0px 0px 0px 15px;
+    margin: 0px 0px 15px 0px;
 }
 
 
+.generos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 15px;/*mini borde a la izq*/
+    flex-direction: column;
+    width: 100vw;
+} 
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+} 
 
 
 
@@ -246,7 +246,6 @@ nav{
 .boton_favorito p{
     color:#053448;
 }
-
 
 
 
@@ -333,14 +332,6 @@ nav{
     text-align: center;
 }
 
-.section-peliculas h3{
-    padding: 0px 0px 0px 15px;
-}
-
-.section-peliculas h3{
-    padding: 0px 0px 0px 15px;
-}
-
 
 
 /*-----------------------------------------------*/
@@ -397,9 +388,9 @@ nav{
 
 /* DETALLES */
 
-.contenido{
-    display: flex;
-    justify-content: space-between;
+.contenido{ /* ????????????????*/
+    display: flex; 
+    justify-content: space-between; 
     flex-wrap: wrap;
 }
 
@@ -418,9 +409,6 @@ h2{
 
 
 
-
-
-
 /*------------------------------------------------*/
 /*search-results.html*/
 
@@ -430,8 +418,9 @@ h2{
 }
 .detalle-resultado-busqueda{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /*para que a la izquierda se vean los textos y a la derecha la imagen*/
 }
+
 .container-search-result{
     width: 100vw;
     width: 100%;
@@ -447,6 +436,7 @@ h2{
     width: 100vw;
     padding: 0 20px 0 20px;
 }
+
 .pelis article{
     display: flex;   
     justify-content: center;
@@ -460,17 +450,12 @@ h2{
 
 
 
-
-
-
-
-
 /*Footer*/ /*El mismo en todas las páginas*/
 
-.todo-menos-footer{   /*un div que separa el contenido del footer*/
+.todo-menos-footer{   /*un div que separa todo el contenido del footer*/
     display: flex;
     flex-direction: column;
-    flex:1;       /*flex:1; hace que ocupe TODO lo que sobre en la pantalla, cubriendo el 100vh*/
+    flex:1;      /*flex:1; hace que ocupe TODO lo que sobra en la pantalla, cubriendo el 100vh*/
 }
 
 footer{
@@ -479,12 +464,13 @@ footer{
     justify-content: center;
     margin-top: 15px;
 }
+
 .footer-hijo{
     display: flex;
     width: 90vw;
     height: 65px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 30px; /*hace que la esquina esté redondeada a la izquieda*/
+    border-top-right-radius: 30px;/*hace que la esquina esté redondeada a la derecha*/
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
@@ -507,10 +493,8 @@ footer{
     align-items: center;
 }
 
+.header-chiquito{display: none;} /*no será visible en la página, ya que lo creamos solo para los media query's*/
 
-
-
-.header-chiquito{display: none;}
 
 /*--------MEDIA QUERY's-------*/
 @media (max-width: 420px) {
