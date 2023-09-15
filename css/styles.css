@@ -503,7 +503,7 @@ footer{
 }
 
 .header-chiquito{display: none;} /*no será visible en la página, ya que lo creamos solo para los media query's*/
-
+a{display: flex; justify-content: center;}
 
 /*--------MEDIA QUERY's-------*/
 @media (max-width: 420px) {
@@ -578,6 +578,7 @@ footer{
         width: 100vw;
         height: 50px;
         justify-content: space-between;
+        padding: 0 15px 0 0;
     }
     .sanguchito{
         display: flex;
