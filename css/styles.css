@@ -1,623 +1,587 @@
-
 /*AJUSTES GENERALES*/
-*{  box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 body {
-    background-color: #022331;
-    margin: 0px;
-    width: 100%;
-    min-height: 100vh; /*Esto es para que el contenido ocupe siempre el 100vh, y el footer se mantenga abajo*/
-    display: flex;
-    flex-direction: column;
+  background-color: #022331;
+  margin: 0px;
+  width: 100%;
+  min-height: 100vh; /*Esto es para que el contenido ocupe siempre el 100vh, y el footer se mantenga abajo*/
+  display: flex;
+  flex-direction: column;
 }
 
 #video-background {
-    position: fixed; /*no se moverá cuando se haga scroll*/
-    top: 0; /*distancia desde la parte superior */
-    left: 0; /*distancia desde la parte izquierda*/
-    min-width: 100%;
-    min-height: 100%;
-    /*garantiza que el video de fondo cubra toda la pantalla del usuario */
-    
-    z-index: -1; /* hace que le video esté detrás de los elementos*/
+  position: fixed; /*no se moverá cuando se haga scroll*/
+  top: 0; /*distancia desde la parte superior */
+  left: 0; /*distancia desde la parte izquierda*/
+  min-width: 100%;
+  min-height: 100%;
+  /*garantiza que el video de fondo cubra toda la pantalla del usuario */
+
+  z-index: -1; /* hace que le video esté detrás de los elementos*/
 }
 
 ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row; 
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
 a {
-    text-decoration: none;
-    color:white;
-    white-space: nowrap; /*hace que el texto sigua en una sola línea y no se divida*/
+  text-decoration: none;
+  color: white;
+  white-space: nowrap; /*hace que el texto sigua en una sola línea y no se divida*/
 }
 
 /* BARRA DE NAVEGACIÓN */ /*La misma en todas las páginas*/
 
-header{
-    display: flex;
-    background-color: rgb(3, 14, 42);
-    width: 100vw;
-    height: 70px;
-    align-items: center;  /*centra en eje Y */
+header {
+  display: flex;
+  background-color: rgb(3, 14, 42);
+  width: 100vw;
+  height: 70px;
+  align-items: center; /*centra en eje Y */
 }
 
-nav{
-    display: flex;
-    width: 100vw;   /*toma el tamaño del header*/
+nav {
+  display: flex;
+  width: 100vw; /*toma el tamaño del header*/
 }
 
-.navegacion{
-    width: 100%;  /*El ul toma el tamaño del nav*/
-    display: flex;
+.navegacion {
+  width: 100%; /*El ul toma el tamaño del nav*/
+  display: flex;
 }
 
-.navegacion li{
-    margin: 0px 20px; /* 0px en el eje y, 20px en el eje x */
+.navegacion li {
+  margin: 0px 20px; /* 0px en el eje y, 20px en el eje x */
 }
 
-.logo{
-    height:110px;
-    margin: 0 0 0 7px; 
+.logo {
+  height: 50px;
+  margin: 0 0 0 7px;
 }
 
-.busqueda-y-usuario{
-    display: flex;
-    align-self: flex-end;
-    align-items: center;
-    width: auto;
-    margin: 0 35px 4px 0; /*35 píxeles en la derecha y 4 píxeles abajo */
-    padding: 5px;
+.busqueda-y-usuario {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  width: auto;
+  margin: 0 35px 4px 0; /*35 píxeles en la derecha y 4 píxeles abajo */
+  padding: 5px;
 }
 
-.busqueda-y-usuario img{
-    margin: 0 4px;
+.busqueda-y-usuario img {
+  margin: 0 4px;
 }
 
-.form{
-    color:gray; /* color de lo que se escriba dentro del formulario */
+.form {
+  color: gray; /* color de lo que se escriba dentro del formulario */
 }
-
 
 /*---------------------------------------------*/
 /*index.html*/
 
-
 /*main*/
-.main-container{
-    width: 100vw;
-    width: 100%;
-    height: auto; /*para que el contenedor padre se adapte al height de los items hijos*/
-    margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
-    display: flex;
-    flex-direction:column; /*cada sección ordenada verticalmente*/
+.main-container {
+  width: 100vw;
+  width: 100%;
+  height: auto; /*para que el contenedor padre se adapte al height de los items hijos*/
+  margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
+  display: flex;
+  flex-direction: column; /*cada sección ordenada verticalmente*/
 }
 
 /*Banner / Carrousel de imagenes*/
-.banner-destacado{
-    display: flex;
-    width:100vw;
-    height: 70vh;
-    overflow-x: scroll; /*establece el scroll horizontal*/
+.banner-destacado {
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  overflow-x: scroll; /*establece el scroll horizontal*/
 }
-.slider-item{
-    width: 70%; /*las imgs ocuparán el 70% de su contenedor padre*/
-    object-fit: cover; /*el contenido se ajusta conpletamente al espacio disponible, manteniendo el aspecto del mismo*/
+.slider-item {
+  width: 70%; /*las imgs ocuparán el 70% de su contenedor padre*/
+  object-fit: cover; /*el contenido se ajusta conpletamente al espacio disponible, manteniendo el aspecto del mismo*/
 }
-
 
 /*Section peliculas*/
 
-.peliculas{
-    display: flex;
-    justify-content: space-between;
-    width: 90vw;
-    background-color: #020c106b;
-    padding: 0 10px;
-    align-items: flex-start;
-    flex-wrap: wrap;
+.peliculas {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  background-color: #020c106b;
+  padding: 0 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.peliculas article{
-    display: flex;
-    width: 220px;
-    flex-direction: column;
+.peliculas article {
+  display: flex;
+  width: 220px;
+  flex-direction: column;
 }
 
-.img-peliculas{
-    display: flex;
-    width: 220px; 
-    height: 320px;  
+.img-peliculas {
+  width: 220px;
+  height: 320px;
 }
 
-.barra-peliculas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.barra-peliculas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.barra-peliculas h3{
-    font-size: 20px;
+.barra-peliculas h3 {
+  font-size: 20px;
 }
 
 .peliculas p {
-    text-align: center;
+  text-align: center;
 }
-
-
 
 /*------------------------------------------------*/
 /*detail-genres.html*/
 
-.container-detail-genres{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.container-detail-genres {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.container-detail-genres h1{
-    margin:15px;
-    text-align: center;
-    text-decoration: underline;
+.container-detail-genres h1 {
+  margin: 15px;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.container-detail-genres h2{
-    margin: 0px 0px 15px 0px;
+.container-detail-genres h2 {
+  margin: 0px 0px 15px 0px;
 }
 
-.peliculas article{
-    margin: 10px 0px;
+.peliculas article {
+  margin: 10px 0px;
 }
-
-.generos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 0 15px;/*mini borde a la izq*/
-    flex-direction: column;
-    width: 100vw;
-} 
-
-.contenido{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-} 
 
 
 
 /*------------------------------------------------*/
 /*detail-movie.html*/
 
-.container_detalle_pelicula{
-    flex-direction: row;
-    display: flex;
-    padding: 10px;
+.container_detalle_pelicula {
+  flex-direction: row;
+  display: flex;
+  padding: 10px;
 }
 
-.detalle_pelicula_izquierda{
-    display:flex;
-    flex-direction: column;
-    width: 50vw;
-    padding: 10px;
+.detalle_pelicula_izquierda {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding: 10px;
 }
 
-.detalle_pelicula_izquierda a{
-    display: flex;
-    justify-content: center;
+.detalle_pelicula_izquierda a {
+  display: flex;
+  justify-content: center;
 }
 
-.detalle_pelicula_izquierda img{
-    width:100%;
+.detalle_pelicula_izquierda img {
+  width: 100%;
 }
 
-.detalle_pelicula_derecha{
-    display:flex;
-    flex-direction: column;
-    width: 50vw;
-    padding: 10px;
+.detalle_pelicula_derecha {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding: 10px;
 }
 
-
-.detalle_pelicula_derecha ul{
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px;
+.detalle_pelicula_derecha ul {
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
 }
 
-.detalle_pelicula_derecha li{
-    padding: 10px;
+.detalle_pelicula_derecha li {
+  padding: 10px;
 }
 
-.detalle_pelicula_derecha h1{
-    text-align: center;
+.detalle_pelicula_derecha h1 {
+  text-align: center;
 }
 
-.boton_favorito{
-    width:200px;
-    display:flex;
-    background-color:white;
-    border: solid 2px #053448;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px 0px 0px;
+.boton_favorito {
+  width: 200px;
+  display: flex;
+  background-color: white;
+  border: solid 2px #053448;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
 }
 
-.boton_favorito p{
-    color:#053448;
+.boton_favorito p {
+  color: #053448;
 }
-
-
 
 /*------------------------------------------------*/
 /*detail-serie.html*/
 
-.container_detalle_serie{
-    flex-direction: row;
-    display: flex;
-    padding: 10px;
+.container_detalle_serie {
+  flex-direction: row;
+  display: flex;
+  padding: 10px;
 }
 
-.detalle_serie_izquierda{
-    display:flex;
-    flex-direction: column;
-    width: 50vw;
-    padding: 10px;
+.detalle_serie_izquierda {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding: 10px;
 }
 
-.detalle_serie_izquierda img{
-    width:100%;
+.detalle_serie_izquierda img {
+  width: 100%;
 }
 
-.detalle_serie_izquierda a{
-    display: flex;
-    justify-content: center;
+.detalle_serie_izquierda a {
+  display: flex;
+  justify-content: center;
 }
 
-.detalle_serie_derecha{
-    display:flex;
-    flex-direction: column;
-    width: 50vw;
-    padding: 10px;
+.detalle_serie_derecha {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding: 10px;
 }
 
-
-.detalle_serie_derecha ul{
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px;
+.detalle_serie_derecha ul {
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
 }
 
-.detalle_serie_derecha li{
-    padding: 10px;
+.detalle_serie_derecha li {
+  padding: 10px;
 }
 
-.detalle_serie_derecha p{
-    text-align: justify;
+.detalle_serie_derecha p {
+  text-align: justify;
 }
 
-.detalle_serie_derecha h1{
-    text-align: center;
+.detalle_serie_derecha h1 {
+  text-align: center;
 }
 
-.boton_favorito{
-    display:flex;
-    width:200px;
-    background-color:white;
-    border: solid 2px #053448;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px 0px 0px;
+.boton_favorito {
+  display: flex;
+  width: 200px;
+  background-color: white;
+  border: solid 2px #053448;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
 }
 
-.boton_favorito p{
-    color:#053448;
+.boton_favorito p {
+  color: #053448;
 }
-
-
-
 
 /*------------------------------------------------*/
 /*favorite.html*/
 
-.conteiner-favorito{
-    width: 100vw;
-    height: auto; /*para que el contenedor padre se adapte al heigth de los items hijos*/
-    margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
-    flex-direction:column; /*cada sección ordenada verticalmente*/
-    justify-content: center;
+.conteiner-favorito {
+  width: 100vw;
+  height: auto; /*para que el contenedor padre se adapte al heigth de los items hijos*/
+  margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
+  flex-direction: column; /*cada sección ordenada verticalmente*/
+  justify-content: center;
 }
 
-.titulo-favorito{
-    text-align: center;
+.titulo-favorito {
+  text-align: center;
 }
-
-
 
 /*-----------------------------------------------*/
 /*genres.html*/
 
 /* LISTA DE GENEROS */
 
-
-.container-genres{
-    flex-direction: row;
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    justify-content: space-evenly;
-
+.container-genres {
+  flex-direction: row;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.container-peliculas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
+.container-peliculas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
 }
 
-.container-series{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-
+.container-series {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
 }
 
-.container-peliculas ul{
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container-peliculas ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.container-series ul{
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container-series ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.container-peliculas li{
-    margin: 15px;
+.container-peliculas li {
+  margin: 15px;
+  border: 1px solid white;
+  padding: 5px;
 }
 
-.container-series li{
-    margin: 15px;
+.container-series li {
+  margin: 15px;
+  border: 1px solid white;
+  padding: 5px;
 }
 
-/* DETALLES */
-
-.contenido{ /* ????????????????*/
-    display: flex; 
-    justify-content: space-between; 
-    flex-wrap: wrap;
-}
-
-.contenido img{
-    width: 250px;
-    margin: 10px 0;
-}
-
-
-p{
-    color: white;
-}
-h2{
-    color: white;
-}
 
 
 
 /*------------------------------------------------*/
 /*search-results.html*/
 
-.container_resultado_busqueda{
-    display:flex;
-    flex-direction: column;
+.container_resultado_busqueda {
+  display: flex;
+  flex-direction: column;
 }
-.detalle-resultado-busqueda{
-    display: flex;
-    flex-direction: row-reverse; /*para que a la izquierda se vean los textos y a la derecha la imagen*/
+.detalle-resultado-busqueda {
+  display: flex;
+  flex-direction: row-reverse; /*para que a la izquierda se vean los textos y a la derecha la imagen*/
 }
-.container_resultado_busqueda h1{
-    margin: 20px;
+.container_resultado_busqueda h1 {
+  margin: 20px;
 }
-.detalle_pelicula_derecha h3{
-    text-align: center;
+.detalle_pelicula_derecha h3 {
+  text-align: center;
 }
-.container-search-result h2{
-    margin: 20px;
+.container-search-result h2 {
+  margin: 20px;
 }
-.container-search-result{
-    width: 100vw;
-    width: 100%;
-    height: auto; /*para que el contenedor padre se adapte al heigth de los items hijos*/
-    margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
-    display: flex;
-    flex-direction:column; /*cada sección ordenada verticalmente*/
-}  
-.pelis{
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    padding: 0 20px 0 20px;
+.container-search-result {
+  width: 100vw;
+  width: 100%;
+  height: auto; /*para que el contenedor padre se adapte al heigth de los items hijos*/
+  margin: 25px 0px 38px 0px; /*separado arriba y abajo*/
+  display: flex;
+  flex-direction: column; /*cada sección ordenada verticalmente*/
 }
-.pelis article{
-    display: flex;   
-    justify-content: center;
-    flex-direction: column;     
-}
-.pelis article p{
-    text-align: center;
-}
-
-
-
 
 /*Footer*/ /*El mismo en todas las páginas*/
 
-.todo-menos-footer{   /*un div que separa todo el contenido del footer*/
-    display: flex;
-    flex-direction: column;
-    flex:1;      /*flex:1; hace que ocupe TODO lo que sobra en la pantalla, cubriendo el 100vh*/
+.todo-menos-footer {
+  /*un div que separa todo el contenido del footer*/
+  display: flex;
+  flex-direction: column;
+  flex: 1; /*flex:1; hace que ocupe TODO lo que sobra en la pantalla, cubriendo el 100vh*/
 }
 
-footer{
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    margin-top: 15px;
+footer {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  margin-top: 15px;
 }
 
-.footer-hijo{
-    display: flex;
-    width: 90vw;
-    height: 65px;
-    border-top-left-radius: 30px; /*hace que la esquina esté redondeada a la izquieda*/
-    border-top-right-radius: 30px;/*hace que la esquina esté redondeada a la derecha*/
-    padding: 10px 20px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(3, 14, 42);
+.footer-hijo {
+  display: flex;
+  width: 90vw;
+  height: 65px;
+  border-top-left-radius: 30px; /*hace que la esquina esté redondeada a la izquieda*/
+  border-top-right-radius: 30px; /*hace que la esquina esté redondeada a la derecha*/
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(3, 14, 42);
 }
 
-.footer-hijo nav ul li{
-    margin: 0px 20px 0px 0px;
-    
+.footer-hijo nav ul li {
+  margin: 0px 20px 0px 0px;
 }
 
-.footer-hijo h4{
-    display: flex;
-    justify-content: center;
+.footer-hijo h4 {
+  display: flex;
+  justify-content: center;
 }
 
-.footer-hijo nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-hijo nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-chiquito{display: none;} /*no será visible en la página, ya que lo creamos solo para los media query's*/
-a{display: flex; justify-content: center;}
+.header-chiquito {
+  display: none;
+} /*no será visible en la página, ya que lo creamos solo para los media query's*/
 
 /*--------MEDIA QUERY's-------*/
+
 @media (max-width: 420px) {
-    #video-background { display: none; } /*saca el video de fondo - # en vez de . porque no es un class, es un id*/
 
-    .peliculas{
-        flex-wrap: wrap;
-        justify-content:space-evenly;
-    }
-    
-    /*detelles series-peliculas-search_results*/
-    .container_detalle_serie{
-        flex-direction: column-reverse;
-        margin: 0 auto;
-        width: 85vw;
-    }
-    .detalle_serie_derecha{
-        width: 100%;
-    }
-    .detalle_serie_izquierda{
-        width: 100%;
-    }
-    .detalle_serie_derecha li{
-        font-size: 15px;
-    }
-    .container_detalle_pelicula{
-        flex-direction: column-reverse;
-        margin: 0 auto;
-        width: 85vw;
-    }
-    .detalle_pelicula_derecha{
-        width: 100%;
-    }
-    .detalle_pelicula_izquierda{
-        width: 100%;
-    }
-    .detalle-resultado-busqueda{
-        flex-direction: column-reverse;
-        margin: 0 auto;
-        width: 85vw;
-    }
-    .pelis {
-        flex-wrap: wrap;
-    }
-    .detalle_pelicula_derecha ul li{
-        font-size: 15px;
-    }
-    .detalle_pelicula_derecha h3{
-        font-size: 20px;
-    }
-    .container-peliculas ul li{
-        font-size: 15px;
-    }
-    .container-series ul li{
-        font-size: 15px;
-    }
+  #video-background {
+    display: none;
+  } /*saca el video de fondo - # en vez de . porque no es un class, es un id*/
 
-    /*---------------*/
-}
+  .peliculas {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-@media (max-width:1200px){
-    .banner-destacado {display: none;}
-    header{display: none;}
-    h3{font-size: 11px;}
-    h4{font-size:xx-small}
-    li{font-size:xx-small}
+  /*detelles series-peliculas-search_results*/
+  .container_detalle_serie {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: 85vw;
+  }
+  .detalle_serie_derecha {
+    width: 100%;
+  }
+  .detalle_serie_izquierda {
+    width: 100%;
+  }
+  .detalle_serie_derecha li {
+    font-size: 15px;
+  }
+  .container_detalle_pelicula {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: 85vw;
+  }
+  .detalle_pelicula_derecha {
+    width: 100%;
+  }
+  .detalle_pelicula_izquierda {
+    width: 100%;
+  }
+  .detalle-resultado-busqueda {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: 85vw;
+  }
+  .pelis {
+    flex-wrap: wrap;
+  }
+  .detalle_pelicula_derecha ul li {
+    font-size: 15px;
+  }
+  .detalle_pelicula_derecha h3 {
+    font-size: 20px;
+  }
+  .container-peliculas ul li {
+    font-size: 15px;
+  }
+  .container-series ul li {
+    font-size: 15px;
+  }
 
-    .img-peliculas{width: 120px;}
-    
-    /*header*/
-    .header-chiquito{
-        display: flex;
-        width: 100vw;
-        height: 50px;
-        justify-content: space-between;
-        padding: 0 15px 0 0;
-    }
-    .sanguchito{
-        display: flex;
-    }
+  /*---------------*/
+  .banner-destacado {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  h3 {
+    font-size: 11px;
+  }
+  h4 {
+    font-size: xx-small;
+  }
+  li {
+    font-size: xx-small;
+  }
 
-    .logo{height: 100%;
-    }
-    select{
-        background-color: #022331;
-    }
-    option{
-        color:white;
-    }
-    /*-------*/
-}
+  /*header*/
+  .header-chiquito {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: space-between;
+    padding: 0 15px 0 0;
+    flex-direction: column;
+  }
+  .sanguchito ul{
+    flex-direction:column ;
+    margin: 0;
+    padding: 6px 0 0 0;
+  }
+  .sanguchito ul li{
+    font-size: large;
+    text-align: center;
+  }
+  .sanguchito{
+    justify-content: center;
+  }
+  .busqueda-y-logo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header-chiquito form{
+    padding: 5px 5px 0 0;
+  }
 
-@media (max-width:700px){
-    .peliculas {
-        flex-wrap:wrap;
-        justify-content: space-evenly;
-    }
+  .logo {
+    height: 40px;
+  }
+  select {
+    background-color: #022331;
+  }
+  option {
+    color: white;
+  }
+  /*-------*/
+  .peliculas {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-    .img-peliculas{
-        margin:5px 0;
-    }
+  .img-peliculas {
+    margin: 5px 0;
+  }
 
-    .titulo-favorito{
-        font-size: 20px;
-    }
+  .titulo-favorito {
+    font-size: 20px;
+  }
 
-    .container-peliculas h2{
-        font-size: 18px;
-        text-align: center;
-    }
-    .container-series h2{
-        font-size: 18px;
-        text-align: center;
-    }
+  .container-peliculas h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .container-series h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .titulo-favorito h1{
+    font-size: 5px; 
+  }
 }

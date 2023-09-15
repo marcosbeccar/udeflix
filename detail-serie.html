@@ -39,15 +39,24 @@
         </header>
 
         <header class="header-chiquito">
+            <div class="busqueda-y-logo">
             <a href="index.html" class="logo"><img src="img/logo-argentina.png" alt="logo" class="logo"></a>
-            <select name="sanguchito">
-                <option value="inicio" method="get">Inicio</option>
-                <option value="favoritos">Favoritos</option>
-                <option value="generos">Géneros</option>
-                <option value="busqueda">Búsqueda</option>
-
-            </select>
+            <form action="search-results.html" method="get">
+                <div>
+                    <input id="busqueda" type="text" name="busqueda" value="" placeholder="Busqueda" class="form">
+                </div>
+            </form>
+            </div>
+            <nav class="sanguchito">
+                <ul>
+                    <li><a href="index.html"> Inicio </a></li>
+                    <li><a href="favorite.html"> Favoritos </a></li>
+                    <li><a href="genres.html"> Géneros </a></li>
+                    <li><a href="search-results.html"> Resultado de búsqueda </a></li>
+                </ul>
+            </nav>
         </header>
+    
 
 
         <main class="container_detalle_serie">
