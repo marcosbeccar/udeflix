@@ -504,6 +504,7 @@ footer{
         flex-wrap: wrap;
         justify-content:space-evenly;
     }
+    
     /*detelles series-peliculas-search_results*/
     .container_detalle_serie{
         flex-direction: column-reverse;
