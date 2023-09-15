@@ -483,7 +483,7 @@ footer{
         flex-wrap: wrap;
         justify-content:space-evenly;
     }
-    /*detelles series-peliculas*/
+    /*detelles series-peliculas-search_results*/
     .container_detalle_serie{
         flex-direction: column-reverse;
         margin: 0 auto;
@@ -508,6 +508,11 @@ footer{
     }
     .detalle_pelicula_izquierda{
         width: 100%;
+    }
+    .detalle-resultado-busqueda{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        width: 85vw;
     }
     /*---------------*/
 }
@@ -566,6 +571,3 @@ footer{
         text-align: center;
     }
 }
-
-/*página favoritos*/
-
