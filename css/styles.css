@@ -120,17 +120,19 @@ nav{
     background-color: #020c106b;
     padding: 0 10px;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .peliculas article{
     display: flex;
-    justify-content: center;
+    width: 220px;
     flex-direction: column;
 }
 
 .img-peliculas{
     display: flex;
-    width: 220px;   
+    width: 220px; 
+    height: 320px;  
 }
 
 .barra-peliculas{
