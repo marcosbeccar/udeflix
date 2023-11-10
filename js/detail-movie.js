@@ -14,13 +14,8 @@ fetch(urlPelis)
     })
     .then(function(data){
         console.log(data.results); 
-        document.querySelector('#busqueda-usuario').innerHTML=busqueda
-        let lista_peliculas = data.results
-        for(let i = 0; i <lista_peliculas.length; i++){
-            let article=document.querySelector('.peliculas')
-            article.innerHTML+=`<a href="detail-movie.html?id=${lista_peliculas[i].id}"></a><article><img src="https://image.tmdb.org/t/p/w342${lista_peliculas[i].poster_path}"><p>${lista_peliculas[i].title}</p><p>${lista_peliculas[i].release_date
-        }</p></article></a>`  
-        }
+        
+        
     })
     .catch(function(error){
         console.log(error);
