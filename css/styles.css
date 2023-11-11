@@ -74,6 +74,10 @@ nav {
   margin: 0 35px 4px 0; /*35 píxeles en la derecha y 4 píxeles abajo */
   padding: 5px;
 }
+#search{
+  display: flex;
+  flex-direction: row;
+}
 
 .busqueda-y-usuario img {
   margin: 0 4px;
@@ -176,7 +180,7 @@ nav {
 .container_detalle_pelicula {
   flex-direction: row;
   display: flex;
-  padding: 10px;
+  padding: 20px 10vw 10px 10vw;
 }
 
 .detalle_pelicula_izquierda {
@@ -199,7 +203,7 @@ nav {
   display: flex;
   flex-direction: column;
   width: 50vw;
-  padding: 10px;
+  padding: 10px 5vw 10px 5vw;
 }
 
 .detalle_pelicula_derecha ul {
@@ -230,69 +234,6 @@ nav {
   color: #053448;
 }
 
-/*------------------------------------------------*/
-/*detail-serie.html*/
-
-.container_detalle_serie {
-  flex-direction: row;
-  display: flex;
-  padding: 10px;
-}
-
-.detalle_serie_izquierda {
-  display: flex;
-  flex-direction: column;
-  width: 50vw;
-  padding: 10px;
-}
-
-.detalle_serie_izquierda img {
-  width: 100%;
-}
-
-.detalle_serie_izquierda a {
-  display: flex;
-  justify-content: center;
-}
-
-.detalle_serie_derecha {
-  display: flex;
-  flex-direction: column;
-  width: 50vw;
-  padding: 10px;
-}
-
-.detalle_serie_derecha ul {
-  flex-direction: column;
-  margin: 0px;
-  padding: 0px;
-}
-
-.detalle_serie_derecha li {
-  padding: 10px;
-}
-
-.detalle_serie_derecha p {
-  text-align: justify;
-}
-
-.detalle_serie_derecha h1 {
-  text-align: center;
-}
-
-.boton_favorito {
-  display: flex;
-  width: 200px;
-  background-color: white;
-  border: solid 2px #053448;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0px 0px 0px;
-}
-
-.boton_favorito p {
-  color: #053448;
-}
 
 /*------------------------------------------------*/
 /*favorite.html*/
@@ -465,6 +406,7 @@ footer {
   }
   .detalle_serie_izquierda {
     width: 100%;
+    padding:0;
   }
   .detalle_serie_derecha li {
     font-size: 15px;
@@ -472,13 +414,16 @@ footer {
   .container_detalle_pelicula {
     flex-direction: column-reverse;
     margin: 0 auto;
-    width: 85vw;
+    width: 89vw;
+    padding: 0;
   }
   .detalle_pelicula_derecha {
     width: 100%;
+    padding:0;
   }
   .detalle_pelicula_izquierda {
     width: 100%;
+    padding:0;
   }
   .detalle-resultado-busqueda {
     flex-direction: column-reverse;
