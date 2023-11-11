@@ -78,6 +78,10 @@ nav {
   display: flex;
   flex-direction: row;
 }
+#search button{
+  background: none;
+  cursor: crosshair;
+}
 
 .busqueda-y-usuario img {
   margin: 0 4px;
@@ -384,6 +388,56 @@ footer {
 
 /*--------MEDIA QUERY's-------*/
 
+@media(max-width: 1020px){
+  header {
+    display: none;
+  }
+  .header-chiquito {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: space-between;
+    padding: 0 15px 0 0;
+    flex-direction: column;
+  }
+  .sanguchito ul{
+    flex-direction:column ;
+    margin: 0;
+    padding: 6px 0 0 0;
+  }
+  .sanguchito ul li{
+    font-size: large;
+    text-align: center;
+    border:white solid 1px;
+    margin: 0 0 4px 0;
+  }
+  .sanguchito{
+    justify-content: center;
+  }
+  .busqueda-y-logo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header-chiquito form{
+    padding: 5px 5px 0 0;
+  }
+
+  .logo {
+    height: 50px;
+  }
+  select {
+    background-color: #022331;
+  }
+  option {
+    color: white;
+  }
+  .banner-destacado {
+    display: none;
+  }
+}
+
 @media (max-width: 420px) {
 
   #video-background {
@@ -445,14 +499,11 @@ footer {
   .container-series ul li {
     font-size: 15px;
   }
-
+  .logo {
+    height: 40px;
+  }
   /*---------------*/
-  .banner-destacado {
-    display: none;
-  }
-  header {
-    display: none;
-  }
+  
   h3 {
     font-size: 11px;
   }
@@ -462,47 +513,11 @@ footer {
   li {
     font-size: xx-small;
   }
-
-  /*header*/
-  .header-chiquito {
-    display: flex;
-    width: 100vw;
-    height: auto;
-    justify-content: space-between;
-    padding: 0 15px 0 0;
-    flex-direction: column;
+  /*footer*/
+  .footer-hijo ul{
+    padding:0 0 0 5px;
   }
-  .sanguchito ul{
-    flex-direction:column ;
-    margin: 0;
-    padding: 6px 0 0 0;
-  }
-  .sanguchito ul li{
-    font-size: large;
-    text-align: center;
-  }
-  .sanguchito{
-    justify-content: center;
-  }
-  .busqueda-y-logo{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .header-chiquito form{
-    padding: 5px 5px 0 0;
-  }
-
-  .logo {
-    height: 40px;
-  }
-  select {
-    background-color: #022331;
-  }
-  option {
-    color: white;
-  }
+  
   /*-------*/
   .peliculas {
     flex-wrap: wrap;
