@@ -17,10 +17,17 @@ fetch(urlPelis)
         let lista_peliculas = data.results
         if (lista_peliculas[0]){
         for(let i = 0; i <lista_peliculas.length; i++){
-            let article=document.querySelector('.peliculas')
-            article.innerHTML+=`<a href="detail-movie.html?id=${lista_peliculas[i].id}"><article>
-            <img src="https://image.tmdb.org/t/p/w342${lista_peliculas[i].poster_path}">
-            <p>${lista_peliculas[i].title}</p><p>${lista_peliculas[i].release_date}</p></article></a>`  
+            if (lista_peliculas[i].poster_path==null){ //Para mostrar 'imagen no encontrada' si no la encuentra
+                let article=document.querySelector('.peliculas')
+                article.innerHTML+=`<a href="detail-movie.html?id=${lista_peliculas[i].id}"><article>
+                <img src="./img/img-no-encontrada.png">
+                <p>${lista_peliculas[i].title}</p><p>${lista_peliculas[i].release_date}</p></article></a>`
+            }else{
+                let article=document.querySelector('.peliculas')
+                article.innerHTML+=`<a href="detail-movie.html?id=${lista_peliculas[i].id}"><article>
+                <img src="https://image.tmdb.org/t/p/w342${lista_peliculas[i].poster_path}">
+                <p>${lista_peliculas[i].title}</p><p>${lista_peliculas[i].release_date}</p></article></a>` 
+            } 
         }
         }else{document.querySelector('.container_resultado_busqueda h2').innerHTML='🔎 No se encontraron coincidencias con su búsqueda'}
     })

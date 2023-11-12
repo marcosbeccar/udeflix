@@ -295,20 +295,17 @@ nav {
   align-items: center;
 }
 
-.container-peliculas li {
+.container-peliculas a {
   margin: 15px;
   border: 1px solid white;
   padding: 5px;
 }
 
-.container-series li {
+.container-series a {
   margin: 15px;
   border: 1px solid white;
   padding: 5px;
 }
-
-
-
 
 /*------------------------------------------------*/
 /*search-results.html*/
