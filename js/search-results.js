@@ -4,10 +4,10 @@ let queryString=location.search
 let queryStringObj= new URLSearchParams(queryString)
 let busqueda= queryStringObj.get('busqueda') //recupero el queryString, o la entrada del usuario.
 
-let urlPelis=`https://api.themoviedb.org/3/search/movie?query=${busqueda}&api_key=${APIKey}`
+let url=`https://api.themoviedb.org/3/search/movie?query=${busqueda}&api_key=${APIKey}`
 
 
-fetch(urlPelis)
+fetch(url)
     .then(function(response){
         return response.json();
     })
