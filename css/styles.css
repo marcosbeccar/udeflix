@@ -379,6 +379,11 @@ footer {
   align-items: center;
 }
 
+.logo_tmdb{
+width: 150px;
+height: 45px;
+}
+
 .header-chiquito {
   display: none;
 } /*no será visible en la página, ya que lo creamos solo para los media query's*/
