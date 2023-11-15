@@ -1,1 +1,0 @@
-//debería ser lo mismo que detail-movies
