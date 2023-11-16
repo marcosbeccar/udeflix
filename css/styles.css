@@ -4,6 +4,9 @@
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
+p {
+  flex-wrap: wrap;
+}
 
 body {
   background-color: #022331;
@@ -132,6 +135,7 @@ nav {
   display: flex;
   width: 220px;
   flex-direction: column;
+  white-space: pre-wrap;
 }
 
 .img-peliculas {

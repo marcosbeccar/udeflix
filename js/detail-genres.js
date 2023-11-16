@@ -4,6 +4,7 @@ let queryString=location.search
 let queryStringObj= new URLSearchParams(queryString)
 let genero= queryStringObj.get('name') //recupero el queryString, o la entrada del usuario.
 let tipo= queryStringObj.get('tipo')
+let nombreGenero=queryStringObj.get('ng')
 console.log(genero)
 
 let url = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=es&page=1&sort_by=popularity.desc&with_genres=${genero}&api_key=${APIKey}`
@@ -17,7 +18,7 @@ if(tipo=='movie'){
         })
         .then(function(data){
             console.log(data);
-            document.querySelector('#busqueda-usuario').innerHTML=genero
+            document.querySelector('#busqueda-usuario').innerHTML=nombreGenero
             let lista_peliculas = data.results
             for (let i=0;i<=9;i++){
                 let article=document.querySelector('#barra-1')
@@ -38,7 +39,7 @@ if(tipo=='movie'){
         })
         .then(function(data){
             console.log(data);
-            document.querySelector('#busqueda-usuario').innerHTML=genero
+            document.querySelector('#busqueda-usuario').innerHTML=nombreGenero
             let lista_peliculas = data.results
             for (let i=0;i<=9;i++){
                 let article=document.querySelector('#barra-1')

@@ -20,9 +20,9 @@ fetch(url)
         let section_izquierda = document.querySelector('.detalle_pelicula_izquierda')
         let section_derecha = document.querySelector('.detalle_pelicula_derecha')
         section_izquierda.innerHTML += `<img src="https://image.tmdb.org/t/p/w500/${data.backdrop_path}">`
-        section_derecha.innerHTML += `<article> <h1>${data.title}</h1> <p>Sinopsis: ${data.overview}</p> 
-        <p> Rating: ${data.vote_average}</p> <p> Fecha de estreno: ${data.release_date}</p> 
-        <p> Duración: ${data.runtime} mins</p> <p> Generos: ${lista_generos}</p></article>`
+        section_derecha.innerHTML += `<article> <h1>${data.name}</h1> <p>Sinopsis: ${data.overview}</p> 
+        <p> Rating: ${data.vote_average}</p> <p> Fecha de estreno: ${data.first_air_date}</p> 
+        <p> Temporadas: ${data.number_of_seasons}</p> <p> Generos: ${lista_generos}</p></article>`
     })
     .catch(function(error){
         console.log(error);
