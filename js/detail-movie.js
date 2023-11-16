@@ -6,6 +6,20 @@ let id_pelicula= queryStringObj.get('id') //recupero el queryString, o la entrad
 
 let url=`https://api.themoviedb.org/3/movie/${id_pelicula}?lenguaje=es&api_key=${APIKey}`
 
+let url2 =`https://api.themoviedb.org/3/movie/${id_pelicula}/recommendations?language=en-US&page=1&api_key=${APIKey}`
+
+let boton = document.getElementById('miBoton');
+let section = document.getElementById('boton');
+
+boton.addEventListener('click', function() {
+    if (section.style.display === 'none') {
+        section.style.display = 'flex';
+    } else {
+        section.style.display = 'none';
+    }
+});
+
+
 fetch(url)
     .then(function(response){
         return response.json();
@@ -15,6 +29,7 @@ fetch(url)
         let lista_generos = []
         for(let i=0; i<data.genres.length; i++){
             lista_generos += data.genres[i].name + "  "
+            
         }
         let section_izquierda = document.querySelector('.detalle_pelicula_izquierda')
         let section_derecha = document.querySelector('.detalle_pelicula_derecha')
@@ -25,4 +40,24 @@ fetch(url)
     })
     .catch(function(error){
         console.log(error);
+    })
+
+
+fetch(url2)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        let lista_peliculas = data.results 
+        console.log(data)
+        for (let i=0;i<=4;i++){
+            let article=document.querySelector('#barra')
+            article.innerHTML+=`<a href="detail-movie.html?id=${lista_peliculas[i].id}"><article>
+            <img src="https://image.tmdb.org/t/p/w342${lista_peliculas[i].poster_path}">
+            <p>${lista_peliculas[i].title}</p><p>${lista_peliculas[i].release_date}</p></article></a>`
+        }
+        
+    })
+    .catch(function(error){
+        console.log(error)
     })
