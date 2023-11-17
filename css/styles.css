@@ -108,6 +108,11 @@ nav {
   color: gray; /* color de lo que se escriba dentro del formulario */
 }
 
+.trailer{
+  display: flex;
+  justify-content: center;
+}
+
 /*---------------------------------------------*/
 /*index.html*/
 
@@ -423,6 +428,12 @@ height: 45px;
 } /*no será visible en la página, ya que lo creamos solo para los media query's*/
 
 /*--------MEDIA QUERY's-------*/
+
+@media(max-width:750px){
+  .trailer{
+    display: none;
+  }
+}
 
 @media (max-width: 1020px) {
   header {
