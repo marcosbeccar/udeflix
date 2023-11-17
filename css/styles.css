@@ -28,6 +28,20 @@ body {
   z-index: -1; /* hace que le video esté detrás de los elementos*/
 }
 
+.loader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(197, 30, 30, 0.483); 
+  z-index: 9999; /* Asegura que esté en la parte superior */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 ul {
   list-style: none;
   display: flex;
