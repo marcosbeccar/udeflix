@@ -1,3 +1,3 @@
 Funcionalidades electivas agregadas a la página:
     ● Loader de carga en resultados de búsqueda
-    ●
+    ● Incorporación de carruseles (EN PROCESO)
