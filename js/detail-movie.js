@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(data); 
             let lista_generos = []
             for(let i=0; i<data.genres.length; i++){
-                lista_generos += data.genres[i].name + "  "
+                lista_generos += `<a href=./detail-genres.html?name=${data.genres[i].id}&tipo=movie&ng=${data.genres[i].name}>${data.genres[i].name + "  "}</a>`
                 
             }
             let section_izquierda = document.querySelector('.detalle_pelicula_izquierda')
