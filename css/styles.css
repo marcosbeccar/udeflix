@@ -165,6 +165,13 @@ nav {
   text-align: center;
 }
 
+#slider{
+  overflow: hidden;
+}
+#arrow{
+  background-color: white;
+}
+
 /*------------------------------------------------*/
 /*detail-genres.html*/
 
