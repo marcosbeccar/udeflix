@@ -126,17 +126,6 @@ nav {
   flex-direction: column; /*cada sección ordenada verticalmente*/
 }
 
-/*Banner / Carrousel de imagenes*/
-.banner-destacado {
-  display: flex;
-  width: 100vw;
-  height: 70vh;
-  overflow-x: scroll; /*establece el scroll horizontal*/
-}
-.slider-item {
-  width: 70%; /*las imgs ocuparán el 70% de su contenedor padre*/
-  object-fit: cover; /*el contenido se ajusta conpletamente al espacio disponible, manteniendo el aspecto del mismo*/
-}
 
 /*Section peliculas*/
 

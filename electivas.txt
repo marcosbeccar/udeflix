@@ -1,4 +1,4 @@
 Funcionalidades electivas agregadas a la página:
     ● Loader de carga en resultados de búsqueda
     ● Trailer de serie y película en la página de detalle 
-    ● Incorporación de carruseles (EN PROCESO)
+    ● Incorporación de carruseles!!

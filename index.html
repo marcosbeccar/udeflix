@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Argenflix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.10/dist/css/uikit.min.css" /> <!--BORRAR-->
     <link href="css/styles.css" rel="stylesheet">
-    <!-- Enlace a los estilos de UIKit -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.7/dist/css/uikit.min.css" />
+    
 
-     <!-- Enlace a la librería de JavaScript de UIKit -->
-     <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.7/dist/js/uikit.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.7/dist/js/uikit-icons.min.js"></script>
- </head>
+    <!-- UIkit JS -->
+</head>
 
 </head>
 
@@ -20,11 +18,11 @@
     <video id="video-background" autoplay muted loop>
         <source src="img/Video Background loop.mp4" type="video/mp4">
     </video>
-
+    
     <header>
-
+        
         <img src="img/logo-argentina.png" alt="logo" class="logo">
-
+        
         <nav>
             <ul class="navegacion">
                 <li><a href="index.html"> Inicio </a></li>
@@ -32,7 +30,7 @@
                 <li><a href="search-results.html"> Resultado de búsqueda </a></li>
             </ul>
         </nav>
-
+        
         <div class="busqueda-y-usuario">
             <form action="search-results.html" method="GET">
                 <div id="search">
@@ -44,16 +42,16 @@
         </div>
 
     </header>
-
+    
     <header class="header-chiquito">
         <div class="busqueda-y-logo">
-        <a href="index.html" class="logo"><img src="img/logo-argentina.png" alt="logo" class="logo"></a>
-        <form action="search-results.html" method="get">
-            <div>
-                <input id="busqueda" type="text" name="busqueda" value="" placeholder="Busqueda" class="form">
-                
-            </div>
-        </form>
+            <a href="index.html" class="logo"><img src="img/logo-argentina.png" alt="logo" class="logo"></a>
+            <form action="search-results.html" method="get">
+                <div>
+                    <input id="busqueda" type="text" name="busqueda" value="" placeholder="Busqueda" class="form">
+                    
+                </div>
+            </form>
         </div>
         <nav class="sanguchito">
             <ul>
@@ -63,82 +61,70 @@
             </ul>
         </nav>
     </header>
-
+    
     <div id="loader" class="loader">
         <img src="img/homero_loader.gif" alt="Loading...">
     </div>
-
-
-    <main class="main-container">
-
-        <section class="banner-destacado">
-            <img src="img/argentina-1985-1.jpeg" class="slider-item">
-            <img src="img/relatos-salvajes.jpg" class="slider-item">
-            <img src="img/me-case-con-un-boludo.jpg" class="slider-item">
-        </section>
-
-        <!--INTENTO DE CARRUSEL-->
-
-        <!--<div uk-slider="autoplay: true">
-
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" >
-            
-                <ul class="uk-slider-items uk-grid">
-                    <li uk-slider-item="0">
-                        <div class="uk-panel">
-                            <img src="img/argentina-1985-1.jpeg" width="600" height="400" alt="">
-                            <div class="uk-position-center uk-panel"></div>
-                        </div>
-                    </li>
-                    <li uk-slider-item="1">
-                        <div class="uk-panel">
-                            <img src="img/relatos-salvajes.jpg" width="600" height="400" alt="">
-                            <div class="uk-position-center uk-panel"></div>
-                        </div>
-                    </li>
-                    <li uk-slider-item="3">
-                        <div class="uk-panel">
-                            <img src="img/me-case-con-un-boludo.jpg" width="600" height="400" alt="">
-                            <div class="uk-position-center uk-panel"></div>
-                        </div>
-                    </li>
-                </ul>
-
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous" uk-icon="icon: chevron-left"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next" uk-icon="icon: chevron-right"></a>
-            </div> 
-
-            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
-        </div> -->
-
-       
     
+    
+    <main class="main-container">
+    
+        
+        <!--CARRUSEL-->
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider    >
+
+            <ul class="uk-slider-items uk-child-width-1-2">
+                <li>
+                     <img src="img/argentina-1985-1.jpeg" width="600" height="400" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+                <li>
+                     <img src="img/me-case-con-un-boludo.jpg" width="600" height="400" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+                
+                <li>
+                     <img src="img/robo_del_siglo.jpg" width="600" height="400" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+                <li>
+                     <img src="img/el_clan.jpg" width="600" height="400" alt="">
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+                
+            </ul>
+        
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+        
+        </div>
+        
+        
         <section class="barra-peliculas" >
             <h3> Populares </h3>
             <div class="peliculas" id="barra-1">
                 
             </div>
         </section>
-
+        
         <section class="barra-peliculas" >
             <h3> Recomendado </h3>
             <div class="peliculas" id="barra-2">
                 
             </div>
         </section>
-
+        
         <section class="barra-peliculas" >
             <h3> Lo más nuevo en series </h3>
             <div class="peliculas" id="barra-3">
                 
             </div>
         </section>
-
+        
     </main>
-
-
-
+    
+    
+    
     <footer>
         <section class="footer-hijo">
             <nav>
@@ -151,9 +137,11 @@
             </nav>
         </section>
     </footer>
-
+    
     <script src="./js/index.js"></script>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.10/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>

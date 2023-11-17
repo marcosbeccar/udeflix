@@ -1,1 +1,1 @@
-//:)
+// Mostrar la lista de generos 
