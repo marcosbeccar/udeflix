@@ -5,19 +5,7 @@ let queryStringObj= new URLSearchParams(queryString)
 let id_pelicula= queryStringObj.get('id') //recupero el queryString, o la entrada del usuario.
 
 let url=`https://api.themoviedb.org/3/movie/${id_pelicula}?lenguaje=es&api_key=${APIKey}`
-
 let url2 =`https://api.themoviedb.org/3/movie/${id_pelicula}/recommendations?language=en-US&page=1&api_key=${APIKey}`
-
-let boton = document.getElementById('miBoton');
-let section = document.getElementById('boton');
-
-boton.addEventListener('click', function() {
-    if (section.style.display === 'none') {
-        section.style.display = 'flex';
-    } else {
-        section.style.display = 'none';
-    }
-});
 
 
 fetch(url)
@@ -61,3 +49,14 @@ fetch(url2)
     .catch(function(error){
         console.log(error)
     })
+
+let boton = document.getElementById('miBoton');
+let section = document.getElementById('boton');
+
+boton.addEventListener('click', function() {
+    if (section.style.display === 'none') {
+        section.style.display = 'flex';
+    } else {
+        section.style.display = 'none';
+    }
+});
