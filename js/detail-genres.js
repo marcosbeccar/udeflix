@@ -24,11 +24,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(data);
                 document.querySelector('#busqueda-usuario').innerHTML=nombreGenero
                 let lista_peliculas = data.results
+                if (lista_peliculas[0]){
                 for (let i=0;i<=9;i++){
                     let article=document.querySelector('#barra-1')
                     article.innerHTML+=`<a href="detail-movie.html?id=${lista_peliculas[i].id}"><article>
                     <img src="https://image.tmdb.org/t/p/w342${lista_peliculas[i].poster_path}">
                     <p>${lista_peliculas[i].title}</p><p>${lista_peliculas[i].release_date}</p></article></a>`
+                }
+                }else{
+                    document.querySelector('#Error').innerHTML='🔎 No se encontraron resultados del género'
                 }
                 loader.style.display = 'none';
             
@@ -46,11 +50,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(data);
                 document.querySelector('#busqueda-usuario').innerHTML=nombreGenero
                 let lista_peliculas = data.results
+                if(lista_peliculas[0]){
                 for (let i=0;i<=9;i++){
                     let article=document.querySelector('#barra-1')
                     article.innerHTML+=`<a href="detail-serie.html?id=${lista_peliculas[i].id}"><article>
                     <img src="https://image.tmdb.org/t/p/w342${lista_peliculas[i].poster_path}">
                     <p>${lista_peliculas[i].name}</p><p>${lista_peliculas[i].first_air_date}</p></article></a>`
+                }
+                }else{
+                    document.querySelector('#Error').innerHTML='🔎 No se encontraron resultados del género'
                 }
                 loader.style.display = 'none';
                 })
