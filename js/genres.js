@@ -33,7 +33,7 @@ fetch(url)
         let lista_generos = data.genres
         for (let i=1;i<=8;i++){
             let article=document.querySelector('#listaGenerosSeries')
-            article.innerHTML+=`<a href="./detail-genres.html?name=${lista_generos[i].id}&tipo=movie&ng=${lista_generos[i].name}">
+            article.innerHTML+=`<a href="./detail-genres.html?name=${lista_generos[i].id}&tipo=TVshow&ng=${lista_generos[i].name}">
             <li> ${lista_generos[i].name} </li></a>`
         }
     
